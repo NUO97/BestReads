@@ -7,7 +7,9 @@ title that are passed from your Javascript to the page in its URL. The value of 
 info, reviews or books depending on which information you want. The value of title should be a string
 representing the single book to display. The browser should request with a URL such as the following:
 
-> //some.host.com/path/to/bestreads.php?mode=description&title=harrypotter
+```
+//some.host.com/path/to/bestreads.php?mode=description&title=harrypotter
+```
 
 The behavior of each mode is described below:
 <ul>
