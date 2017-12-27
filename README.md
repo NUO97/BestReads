@@ -10,12 +10,14 @@ representing the single book to display. The browser should request with a URL s
 > //some.host.com/path/to/bestreads.php?mode=description&title=harrypotter
 
 The behavior of each mode is described below:
-..* mode=description: The title parameter must also be passed with this mode. The web service should locate
+<ul>
+<li> mode=description: The title parameter must also be passed with this mode. The web service should locate
 the file called description.txt for the book, and output the entire contents as plain text. This is the
-only mode that should output its response as plain text; all of the others output JSON.
-..* mode=info: The title parameter must also be passed with this mode. The web service should output the
+only mode that should output its response as plain text; all of the others output JSON. </li>
+<li> mode=info: The title parameter must also be passed with this mode. The web service should output the
 contents of info.txt, a file with three lines of information about the book: its title, author, and number
-of stars, as JSON.
+of stars, as JSON. </li>
+</ul>
 
 > Example output:
 > {
