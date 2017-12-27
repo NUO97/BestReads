@@ -81,12 +81,14 @@ Example output:
 ### Javascript Details
 bestreads.js will use Ajax to request data from the PHP service and insert it into bestreads.html. Here
 is the functionality that the page have:
-• When the page loads it should request all of the books (mode=books) from the web service. It should
+<ul>
+<li> When the page loads it should request all of the books (mode=books) from the web service. It should
 display each of these books by adding the image of the books cover and the books title (in a paragraph)
 to a div and adding that div to the allbooks div already on the page. The singlebook div should be
-hidden.
-• If the home button on the upper right is clicked it should do the same thing that the page does when
+  hidden.</li>
+<li> If the home button on the upper right is clicked it should do the same thing that the page does when
 it loads. Even if the button is pressed multiple times very quickly, only one listing for each book should
-appear on the page.
-• When a user clicks on a book cover or title of a book, the page will instead render the info, description and 
-reviews for the selected book. 
+  appear on the page. </li>
+<li> When a user clicks on a book cover or title of a book, the page will instead render the info, description and 
+  reviews for the selected book. </li>
+</ul>
