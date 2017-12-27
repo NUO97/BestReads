@@ -17,20 +17,23 @@ only mode that should output its response as plain text; all of the others outpu
 <li> mode=info: The title parameter must also be passed with this mode. The web service should output the
 contents of info.txt, a file with three lines of information about the book: its title, author, and number
 of stars, as JSON. </li>
-</ul>
 
-> Example output:
-> {
-> "title":"Harry Potter and the Prisoner of Azkaban",
-> "author":"by J.K. Rowling, Mary GrandPre(Illustrator)",
-> "stars":"4.5"
-> }
-• mode=reviews: The title parameter must also be passed with this mode. Output an array (in JSON
+Example output:
+```
+{
+"title":"Harry Potter and the Prisoner of Azkaban",
+"author":"by J.K. Rowling, Mary GrandPre(Illustrator)",
+"stars":"4.5"
+}
+```
+<li> mode=reviews: The title parameter must also be passed with this mode. Output an array (in JSON
 form) containing all of the reviews for the book, the review score, and the name of the reviewer. The
 reviews are stored in files called review1.txt, review2.txt, etc. Each file contains one review for each
 book which is exactly three lines: The reviewer’s name, the number of stars they gave the book and their
-review. If a book has 10 or more reviews, the names will be e.g. review01.txt, .... 
+review. If a book has 10 or more reviews, the names will be e.g. review01.txt, .... </li>
+
 Example output:
+```
 [
 {
 "name" : "Wil Wheaton",
@@ -50,12 +53,13 @@ Against The Dark Arts teacher who is just a teacher"
 was chained to it for two days."
 }
 ]
-2
-• mode=books: Outputs JSON containing the titles and folder names for each of the books that we have
+```
+<li>mode=books: Outputs JSON containing the titles and folder names for each of the books that we have
 data for. Find all the books inside the books folder, and build JSON containing information about each
-one.
+one. </li>
 
 Example output:
+```
 {
 "books" : [
 {
@@ -69,6 +73,8 @@ Example output:
 ... (one entry like this for each folder inside books/)
 ]
 }
+```
+</ul>
 
 # Javascript Details
 bestreads.js will use Ajax to request data from the PHP service and insert it into bestreads.html. Here
