@@ -3,7 +3,7 @@ Creating a simple PHP web service and use Ajax to retrieve data from said web se
 
 ### Web Service Details
 bestreads.php service will provide different data based upon a couple query parameters named mode and
-title that are passed from your Javascript to the page in its URL. The value of mode should be description,
+title that are passed through URL. The value of mode should be description,
 info, reviews or books depending on which information you want. The value of title should be a string
 representing the single book to display. The browser should request with a URL such as the following:
 
