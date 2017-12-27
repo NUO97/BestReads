@@ -1,7 +1,7 @@
 # BestReads
 Creating a simple PHP web service and use Ajax to retrieve data from said web service.
 
-# Web Service Details
+### Web Service Details
 bestreads.php service will provide different data based upon a couple query parameters named mode and
 title that are passed from your Javascript to the page in its URL. The value of mode should be description,
 info, reviews or books depending on which information you want. The value of title should be a string
@@ -78,7 +78,7 @@ Example output:
 ```
 </ul>
 
-# Javascript Details
+### Javascript Details
 bestreads.js will use Ajax to request data from the PHP service and insert it into bestreads.html. Here
 is the functionality that the page have:
 • When the page loads it should request all of the books (mode=books) from the web service. It should
