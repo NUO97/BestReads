@@ -6,7 +6,8 @@ bestreads.php service will provide different data based upon a couple query para
 title that are passed from your Javascript to the page in its URL. The value of mode should be description,
 info, reviews or books depending on which information you want. The value of title should be a string
 representing the single book to display. The browser should request with a URL such as the following:
-//some.host.com/path/to/bestreads.php?mode=description&title=harrypotter
+
+> //some.host.com/path/to/bestreads.php?mode=description&title=harrypotter
 
 The behavior of each mode is described below:
 • mode=description: The title parameter must also be passed with this mode. The web service should locate
@@ -15,12 +16,13 @@ only mode that should output its response as plain text; all of the others outpu
 • mode=info: The title parameter must also be passed with this mode. The web service should output the
 contents of info.txt, a file with three lines of information about the book: its title, author, and number
 of stars, as JSON.
-Example output:
-{
-"title":"Harry Potter and the Prisoner of Azkaban",
-"author":"by J.K. Rowling, Mary GrandPre(Illustrator)",
-"stars":"4.5"
-}
+
+> Example output:
+> {
+> "title":"Harry Potter and the Prisoner of Azkaban",
+> "author":"by J.K. Rowling, Mary GrandPre(Illustrator)",
+> "stars":"4.5"
+> }
 • mode=reviews: The title parameter must also be passed with this mode. Output an array (in JSON
 form) containing all of the reviews for the book, the review score, and the name of the reviewer. The
 reviews are stored in files called review1.txt, review2.txt, etc. Each file contains one review for each
